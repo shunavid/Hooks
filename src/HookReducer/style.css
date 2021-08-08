@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(8, 7, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin: 4rem;
+    font-size:18px;
+}
+
+.button:after{
+    content: "Hover Here ";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #d2bdff;
+    transition: all 0.4s linear;
+}
+.button::before {
+    content: " ";
+    position: relative;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #bda7ee;
+    box-shadow: 0px 0px 10px 3px #0ff;
+    margin-left: -8px;
+    margin-top: -8px;
+    opacity: 0;
+    transition: all 0.4s linear;
+    animation: star 1.3s linear infinite;
+}
+
+
+.button:hover::before{
+    opacity: 1;
+    animation: start 1.3s linear infinite ;
+}
+.button:hover::after{
+    content: "hovering here";
+    text-shadow: 0 0 40px #fff;
+
+}
+.button2{
+    position: relative;
+    display: inline-block;
+    
+}
+.button2:hover{
+    border: 1px solid transparent;
+}
+
+.para{  
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 50px;  
+    margin-left: 45%;
+}
+
+.using-state{
+
+    margin-top: 6rem;
+    width:35rem;
+ 
+}
+
+.order-list{
+   
+    font-size:2rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    background-color:#fff;
+}
+
+.head {
+    margin-top:4rem;
+}
+ 
+.Overall {
+    width:40rem;
+}
