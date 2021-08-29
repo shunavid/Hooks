@@ -17,6 +17,9 @@ function Routing() {
             <Link className="order-list" to="/UseReducer">
                 UseReducer
             </Link>
+            <Link className="order-list" to="/UseEffect2">
+                UseEffect Cleanup
+            </Link>
 
         </div>
         </>

@@ -5,6 +5,7 @@ import './App.css'
 import UseEffect from './HookEffect/UseEffect';
 import Routing from './Routing';
 import UseReducer from './HookReducer/UseReducer';
+import UseEffect2 from './HookEffect/UseEffect2';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/UseReducer">
           <UseReducer />
+        </Route>
+        <Route path="/UseEffect2">
+          <UseEffect2 />
         </Route>
       </Switch>
     </div>
